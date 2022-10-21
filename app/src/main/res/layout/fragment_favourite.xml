@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavouriteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_thongtin"
+            android:layout_width="306dp"
+            android:layout_height="93dp"
+            android:background="@color/pinkColor"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Vũ Lê Na\n2050531200234"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/edt_them"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tv_thongtin"
+            android:layout_marginTop="2dp"
+            android:hint="Nhập món bạn yêu thích "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edt_hint"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/edt_them"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white"
+            android:hint="Nhập giá"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/bt_them"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_hint"
+            android:backgroundTint="@color/pinkColor"
+            android:fontFamily="sans-serif-black"
+            android:text="Thêm"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_them"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="101dp"
+            android:layout_height="93dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="6dp"
+            android:background="@color/pinkColor"
+            android:src="@drawable/food_safety" />
+    </RelativeLayout>
+</FrameLayout>
